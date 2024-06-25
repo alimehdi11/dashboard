@@ -42,8 +42,12 @@ body {
   padding-inline: 20px;
   color: white;
   transition: all .5s ease-in-out;
+  overflow-y: auto;
+  scrollbar-width: none; 
 }
-
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
 .sidebar span{
   opacity: 0;
 }
