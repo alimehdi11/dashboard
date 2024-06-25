@@ -224,6 +224,9 @@ background-color: rgb(234, 234, 234);
 .sidebar{
   display: block;
 }
+.dashboard-nav .sidebar-btn{
+  display: none;
+}
 }
 @media (min-width: 992px){
   .sidebar{
