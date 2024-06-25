@@ -13,10 +13,11 @@
       referrerpolicy="no-referrer"
     />
     <!-- link custom css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="main">
+      <!-- sidebar for large screen -->
       <div class="sidebar">
         <div class="sidebar-header">
           <button class="sidebar-btn"><i class="fas fa-bars"></i></button>
@@ -79,9 +80,75 @@
           </li>
         </ul>
       </div>
+      <!-- sidebar for large screen -->
+      <!-- sidebar for mobile screen -->
+      <div class="sidebar responsive-sidebar">
+        <div class="sidebar-header">
+          <button class="sidebar-btn"><i class="fas fa-bars"></i></button>
+          <span>My Dashboard</span>
+        </div>
+        <ul class="sidebar-body">
+          <li>
+            <a href="">
+              <i class="fas fa-th-large"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user"></i>
+              <span >Accounts</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user"></i>
+              <span >Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <span >Institute</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-clipboard-list"></i>
+              <span >Head Of Department</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Leave Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Event Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Announcements</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar for mobile screen -->
       <div class="content">
         <!-- Dashboard Nav -->
         <div class="dashboard-nav">
+          <button class="sidebar-btn"><i class="fas fa-bars"></i></button>
           <h2>Dashboard</h2>
           <div class="input-div">
             <input type="text" placeholder="Search..." />
@@ -115,6 +182,7 @@
          <!-- Dashboard Chanceler Table -->
           <div class="table-data">
             <h2>Voice Chanclers Table</h2>
+    <div style="overflow-x: auto;">
             <table cellspacing="0" >
               <thead>
                 <tr>
@@ -135,11 +203,13 @@
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
          <!-- Dashboard Chanceler Table -->
          <!-- Dashboard Registrars Table -->
           <div class="table-data">
             <h2>Registrars Table</h2>
+    <div style="overflow-x: auto;">
             <table cellspacing="0" >
               <thead>
                 <tr>
@@ -173,6 +243,8 @@
                 </tr>
               </tbody>
             </table>
+    </div>
+            
           </div>
          <!-- Dashboard Registrars Table -->
       </div>

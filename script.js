@@ -1,8 +1,10 @@
-let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebar-btn");
+let sidebars = document.querySelectorAll(".sidebar");
+let sidebarBtns = document.querySelectorAll(".sidebar-btn");
 
 const toggleSidebar = () =>{
-  sidebar.classList.toggle("active")
+  sidebars[0].classList.toggle("active")
+  sidebars[1].classList.toggle("active")
 }
-
-sidebarBtn.addEventListener("click",toggleSidebar);
+for(let btn of sidebarBtns){
+  btn.addEventListener("click",toggleSidebar);
+}

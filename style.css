@@ -12,6 +12,7 @@
   font-weight: 500;
 }
 
+
 button {
   background-color: transparent;
   border: none;
@@ -33,18 +34,17 @@ body {
 }
 /* sidebar styling */
 .sidebar {
+  display: none;
   background: #11101d;
-  width: 255px;
+  width: 83px;
   overflow: hidden;
   flex-shrink: 0;
   padding-inline: 20px;
   color: white;
   transition: all .5s ease-in-out;
 }
-.sidebar.active{
-  width: 83px;
-}
-.sidebar.active span{
+
+.sidebar span{
   opacity: 0;
 }
 .sidebar a {
@@ -93,6 +93,21 @@ body {
   color: black;
   background-color: white;
 }
+
+.responsive-sidebar{
+  display: block;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  left: -100%;
+}
+.responsive-sidebar.active{
+  left: 0%;
+  width: 255px;
+}
+.responsive-sidebar span{
+  opacity: 1;
+}
 /* sidebar styling */
 /* dashboard nav styling */
 .content {
@@ -103,13 +118,22 @@ body {
 
 .dashboard-nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 22vw;
+  gap: 20px;
 }
 
+.dashboard-nav .sidebar-btn{
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 32px;
+  font-size: 24px;
+}
 .input-div {
   position: relative;
-  width: 30%;
+  width: 80%;
+  max-width: 400px;
 }
 .input-div input {
   border: none;
@@ -160,6 +184,9 @@ body {
   font-weight: 500;
   margin-bottom: 20px;
 }
+table{
+  width: 100%;
+}
 .table-data table thead{
   background: #2a9df4;
   text-align: left;
@@ -168,6 +195,8 @@ body {
 }
 .table-data table tr th,.table-data table tr td{
   padding: 15px;
+  white-space: nowrap;
+  
 }
 .table-data table tbody tr{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -188,3 +217,36 @@ background-color: rgb(234, 234, 234);
 }
 
 /* table styling */
+
+
+/* responsive design css  */
+@media (min-width: 576px){
+.sidebar{
+  display: block;
+}
+}
+@media (min-width: 992px){
+  .sidebar{
+   width: 255px;
+  }
+  .sidebar span{
+    opacity: 1;
+  }
+  .sidebar.active{
+   width: 83px;
+  }
+  .sidebar.active span{
+    opacity: 0;
+  }
+  .responsive-sidebar{
+    display: none;
+  }
+  .dashboard-nav{
+    flex-direction: row;
+    gap: 18vw;
+  }
+  
+}
+/* responsive design css  */
+
+
