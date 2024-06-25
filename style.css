@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+body {
+  background: #f7f8fc;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+/* sidebar styling */
+.sidebar {
+  background: #11101d;
+  width: 255px;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding-inline: 20px;
+  color: white;
+  transition: all .5s ease-in-out;
+}
+.sidebar.active{
+  width: 83px;
+}
+.sidebar.active span{
+  opacity: 0;
+}
+.sidebar a {
+  color: white;
+}
+.sidebar-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-block: 20px;
+  padding-left: 10px;
+}
+.sidebar span{
+  transition: all .5s ease-in-out;
+  white-space: nowrap;
+}
+.sidebar-btn,
+.sidebar-header span {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+.sidebar-btn {
+  font-size: 28px;
+}
+.sidebar-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.sidebar-body li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 10px;
+  border-radius: 10px;
+  background: #1d1b31;
+  transition: all 0.4s;
+}
+.sidebar li a i {
+  font-size: 22px;
+}
+
+.sidebar li a:hover {
+  color: black;
+  background-color: white;
+}
+/* sidebar styling */
+/* dashboard nav styling */
+.content {
+  flex-grow: 1;
+  padding: 30px 15px;
+  overflow-y:auto;
+}
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  gap: 22vw;
+}
+
+.input-div {
+  position: relative;
+  width: 30%;
+}
+.input-div input {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 13px 20px;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+}
+.input-div i {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  font-size: 20px;
+}
+/* dashboard nav styling */
+
+/* dashboard cards Styling */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-block:40px;
+}
+
+.dashboard-card {
+  color: black;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  flex: 1 1 250px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  border-radius: 8px;
+}
+.dashboard-card p{
+  color: gray;
+}
+/* dashboard cards Styling */
+/* table styling */
+.table-data{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.table-data table thead{
+  background: #2a9df4;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+.table-data table tr th,.table-data table tr td{
+  padding: 15px;
+}
+.table-data table tbody tr{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.table-btns{
+  display: flex;
+  gap: 8px;
+}
+.table-btns button{
+  background: #2a9df4;
+  padding: 8px 10px;
+  color: white;
+  border-radius:5px;
+}
+
+.table-data table tbody tr:hover{
+background-color: rgb(234, 234, 234);
+}
+
+/* table styling */

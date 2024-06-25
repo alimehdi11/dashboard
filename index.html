@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Dashboard</title>
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <button class="sidebar-btn"><i class="fas fa-bars"></i></button>
+          <span>My Dashboard</span>
+        </div>
+        <ul class="sidebar-body">
+          <li>
+            <a href="">
+              <i class="fas fa-th-large"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user"></i>
+              <span >Accounts</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user"></i>
+              <span >Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <span >Institute</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-clipboard-list"></i>
+              <span >Head Of Department</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Leave Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Event Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-tie"></i>
+              <span >Announcements</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <!-- Dashboard Nav -->
+        <div class="dashboard-nav">
+          <h2>Dashboard</h2>
+          <div class="input-div">
+            <input type="text" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <!-- Dashboard Nav -->
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+          <a href="" class="dashboard-card">
+            <h3>My Account</h3>
+          </a>
+          <a href="" class="dashboard-card">
+            <h3>Vice Chancellors</h3>
+            <p>Total 50 Added</p>
+          </a>
+          <a href="" class="dashboard-card">
+            <h3>Registors</h3>
+            <p>Total 50 Added</p>
+          </a>
+          <a href="" class="dashboard-card">
+            <h3>Administrative Staffs</h3>
+            <p>Total 50 Added</p>
+          </a>
+          <a href="" class="dashboard-card">
+            <h3>Finance Directors</h3>
+            <p>Total 50 Added</p>
+          </a>
+        </div>
+        <!-- Dashboard Cards -->
+         <!-- Dashboard Chanceler Table -->
+          <div class="table-data">
+            <h2>Voice Chanclers Table</h2>
+            <table cellspacing="0" >
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>safdar Ali</td>
+                  <td>20</td>
+                  <td>male</td>
+                  <td>safdarali@gmail.com</td>
+                  <td>current</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+         <!-- Dashboard Chanceler Table -->
+         <!-- Dashboard Registrars Table -->
+          <div class="table-data">
+            <h2>Registrars Table</h2>
+            <table cellspacing="0" >
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                  <th>actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>safdar Ali</td>
+                  <td>safdarali@gmail.com</td>
+                  <td>Administrator</td>
+                  <td>Active</td>
+                  <td class="table-btns">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ali</td>
+                  <td>ali11@gmail.com</td>
+                  <td>Administrator</td>
+                  <td>InActive</td>
+                  <td class="table-btns">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+         <!-- Dashboard Registrars Table -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
