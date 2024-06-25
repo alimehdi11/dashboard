@@ -42,7 +42,7 @@ body {
   padding-inline: 20px;
   color: white;
   transition: all .5s ease-in-out;
-  overflow-y: auto;
+  overflow: auto;
   scrollbar-width: none; 
 }
 .sidebar::-webkit-scrollbar{
